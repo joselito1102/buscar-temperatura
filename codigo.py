@@ -1,7 +1,7 @@
 import requests
 
 # conexion por url de api, se pone la url como tal de la api a utilizar
-#nombre de usuario
+#nombre de usuario estos son de prueba
 #contraseña
 #latitud y longitud en coordenadas decimales(formato simple)
 #fecha a la cual quiere consultar
@@ -11,7 +11,7 @@ password = "o5dP4GULo8"
 location = '4.60971,-74.08175'
 date = '2023-05-19'
 
-#se arma la url con los parametros de la API que son fecha y hora, variable a tomar y el tipo de formato añadiendo la locacion, la fecha y la url_base
+#se arma la url con los parametros de la API que son fecha y hora, se ajusta la hora a la cual consultar la variable a tomar y el tipo de formato añadiendo la locacion, la fecha y la url_base
 #con la funcion get se trae la respuesta de la API o de la pagina web
 url = f'{url_base}/{date}T00:00:00Z/t_2m:C,relative_humidity_2m:p/{location}/json' 
 response = requests.get(url, auth=(username, password))
